@@ -6,23 +6,26 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module state_machine(
+module state_machine
+    (
     input logic clk,
     input logic display_clk,
     input logic reset,
+    input logic start,
     //input  logic [7:0] sw,
     output logic [7:0] an,
     output logic [7:0] sseg,
     //input logic start,
     //input logic stop,
-    output logic led[15]
-    //output logic [7:0] sevenseg
+    output logic led[15],
+    output logic [7:0] sevenseg
     );
     
+// fsm state type
 typedef enum {init, starter, test, reaction, tooslow, cheater} state_type;
 
-state_type state_reg, state_next;
-    
+// declaration
+state_type state_reg, state_next;    
 //logic led[15]; // initialize visual cue led 
 logic cheat; // initialize "9999" display signal
 logic HI; // initialize "HI" display signal
@@ -31,6 +34,7 @@ logic [4:0] count1; // initialize 1st counter
 logic [4:0] count2; // initialize 2nd counter
 logic random; // initialize random number to make the timer unpredictable
 logic [7:0] led0, led1, led2, led3; // output from hex_to_sseg and input to disp_mux
+
 // instantiate clock divider to use the millisecond clock
 clock_divider clock_divider
     (.clk(clk), .reset(reset), .display_clk(display_clk));
@@ -57,16 +61,20 @@ hex_to_sseg sseg_unit_3
     (.hex(1'h1), .decimal_point(1'b0), .sseg(led3));
              
 always_ff @(posedge clk, posedge reset)
-    if (reset == 1'b0)
-        begin
-            state_reg <= init; // start
-        end
+    if (reset)
+    begin
+        state_reg <= init; // start
+        count1 <= 5'b00000; // reset the 1st counter
+        count2 <= 5'b00000;
+    end
     else // enable state machine
-        begin
-            state_reg <= state_next;
-        end
+    begin
+        state_reg <= state_next;
+        count1 <= count1_next;
+        count2 <= count2_next;
+    end
 
-always_ff @ (posedge display_clk)
+/*always_ff @ (posedge display_clk)
     if (state_reg == test)
         begin
             count2 <= count2 + 1; // start 2nd counter
@@ -77,25 +85,27 @@ always_ff @ (posedge display_clk)
         end
     else
         begin
-        end
+        end*/
         
 always_comb
 begin
-  state_next = state_reg;
+    state_next = state_reg;
     case (state_reg)
         init:
+        begin
             HI = 1'b1; // seven segment display says "HI"
             cheat = 1'b0;
-            count1 = 5'b00000; // clear 1st counter
+            count1_next = 5'b00000; // clear 1st counter
             // get random number for counter start time
             if (start) // start button is pressed
-                begin
-                    count2 = 5'b00000; // clear the 2nd counter
-                    state_next = starter; // move to the next state
-                end
+            begin
+                count2_next = 5'b00000; // clear the 2nd counter
+                state_next = starter; // move to the next state
+            end
+        end
         starter:
             HI = 1'b0; // turns off the "HI" message
-            sevenseg = 0; // seven segment display is off
+            sevenseg = 1'b0; // seven segment display is off
             cheat = 1'b0; // turns off seven segment display = "9999"
             // start 1st counter
             if (stop) // used to pickup a false start
