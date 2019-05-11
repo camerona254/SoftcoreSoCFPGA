@@ -1,17 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1555801961">
-  <File Type="PA-TCL" Name="period_counter.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="period_counter_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="period_counter_reports.tcl"/>
-  <File Type="RDS-RDS" Name="period_counter.vds"/>
-  <File Type="RDS-UTIL" Name="period_counter_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="period_counter_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="period_counter.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="period_counter_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="period_counter_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1557612547">
+  <File Type="PA-TCL" Name="state_machine.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="state_machine_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="state_machine_reports.tcl"/>
+  <File Type="RDS-RDS" Name="state_machine.vds"/>
+  <File Type="RDS-UTIL" Name="state_machine_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="state_machine_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="state_machine.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="state_machine_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="state_machine_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/ch06_06_period_counter.sv">
+    <File Path="$PSRCDIR/ch04_15_disp_mux.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clock_divider.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/list_ch03_14_hex_to_sseg.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/state_machine.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -20,13 +41,12 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="period_counter"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="TopModule" Val="state_machine"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../Source and Constraint Files/constraint/Nexys4_DDR_chu.xdc">
+    <File Path="$PSRCDIR/Nexys4_DDR_chu.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

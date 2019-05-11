@@ -9,83 +9,118 @@
 module state_machine
     (
     input logic clk,
-    input logic display_clk,
-    input logic reset,
-    input logic start,
-    //input  logic [7:0] sw,
-    output logic [7:0] an,
+    input logic [3:0] dsp_clk,
+    input logic reset, 
+    input logic [2:0] btn,
+    output logic ERR, HI, SLOW, CHEAT,
+    inout logic [3:0] an,
     output logic [7:0] sseg,
-    //input logic start,
-    //input logic stop,
-    output logic led[15],
-    output logic [7:0] sevenseg
+    output logic led[15]
     );
     
 // fsm state type
 typedef enum {init, starter, test, reaction, tooslow, cheater} state_type;
 
-// declaration
+// declarations
 state_type state_reg, state_next;    
-//logic led[15]; // initialize visual cue led 
-logic cheat; // initialize "9999" display signal
-logic HI; // initialize "HI" display signal
-logic ERR; // initialize "ERR" display signal
-logic [4:0] count1; // initialize 1st counter
-logic [4:0] count2; // initialize 2nd counter
+logic main_clock;
+logic rst;
+logic LED; // initialize visual cue led 
+//logic CHEAT; // initialize "9999" display signal
+//logic HI; // initialize "HI" display signal
+//logic ERR; // initialize "ERR" display signal
+//logic SLOW; // initialize sevenseg counter display
+logic [15:0] count1; // initialize 1st counter memory
+logic [15:0] count1_next; // initialize 1st counter signal
+logic [15:0] count2; // initialize 2nd counter memory
+logic [15:0] count2_next; // initialize 2nd counter signal
 logic random; // initialize random number to make the timer unpredictable
+logic start;
+logic stop;
 logic [7:0] led0, led1, led2, led3; // output from hex_to_sseg and input to disp_mux
+logic [3:0] hex0, hex1, hex2, hex3;
+logic [7:0] sevenseg; // internal seven segment display signals
 
 // instantiate clock divider to use the millisecond clock
 clock_divider clock_divider
-    (.clk(clk), .reset(reset), .display_clk(display_clk));
+    #(parameter N = 5)
+    (
+    .clk(main_clock),
+    .reset(rst), 
+    .display_clk(dsp_clk)
+    );
     
 // instantiate 7-seg LED display time-multiplexing module
 disp_mux disp_unit
-    (.clk(clk), .reset(1'b0), .in0(led0), .in1(led1),
-     .in2(led2), .in3(led3), .an(an), .sseg(sseg));
+    (
+    .clk(main_clock), 
+    .reset(rst),
+    .SLOW(SLOW),
+    .HI(HI),
+    .ERR(ERR),
+    .CHEATER(CHEAT), 
+    .in0(led0), .in1(led1), .in2(led2), .in3(led3), 
+    .an(an), 
+    .ssegd(sevenseg)
+    );
      
-//instantiate 1st seven segment digit module
+// instantiate 1st seven segment digit module
 hex_to_sseg sseg_unit_0
-    (.hex(1'h4), .decimal_point(1'b1), .sseg(led0));
+    (
+    .hex(hex0), 
+    .decimal_point(1'b1), 
+    .sseg(led0)
+    );
     
 //instantiate 2nd seven segment digit module
 hex_to_sseg sseg_unit_1
-    (.hex(1'h3), .decimal_point(1'b0), .sseg(led1));
+    (
+    .hex(hex1), 
+    .decimal_point(1'b0), 
+    .sseg(led1)
+    );
     
-//instantiate 3rd seven segment digit module
+// instantiate 3rd seven segment digit module
 hex_to_sseg sseg_unit_2
-    (.hex(1'h2), .decimal_point(1'b1), .sseg(led2));
+    (
+    .hex(hex2), 
+    .decimal_point(1'b1), 
+    .sseg(led2)
+    );
 
-//instantiate 3rd seven segment digit module
+// instantiate 3rd seven segment digit module
 hex_to_sseg sseg_unit_3
-    (.hex(1'h1), .decimal_point(1'b0), .sseg(led3));
-             
-always_ff @(posedge clk, posedge reset)
+    (
+    .hex(hex3), 
+    .decimal_point(1'b0), 
+    .sseg(led3)
+    );
+
+// memory logic for fsm             
+/*always_ff @(posedge clk, posedge reset)
+    if (reset)
+    begin
+        
+    end
+    else // enable state machine
+    begin
+        
+    end*/
+
+// memory logic for counter
+always_ff @ (posedge dsp_clk[0], posedge reset)
     if (reset)
     begin
         state_reg <= init; // start
-        count1 <= 5'b00000; // reset the 1st counter
-        count2 <= 5'b00000;
+        count1 <= 0; // reset the 1st counter
+        count2 <= 0; // reset the 2nd counter
     end
-    else // enable state machine
+    else
     begin
         state_reg <= state_next;
         count1 <= count1_next;
         count2 <= count2_next;
-    end
-
-/*always_ff @ (posedge display_clk)
-    if (state_reg == test)
-        begin
-            count2 <= count2 + 1; // start 2nd counter
-        end
-    else if (state_reg == starter)
-        begin
-            count1 <= count1 + 1; // start 1st counter
-        end
-    else
-        begin
-        end*/
+    end         
         
 always_comb
 begin
@@ -93,73 +128,89 @@ begin
     case (state_reg)
         init:
         begin
-            HI = 1'b1; // seven segment display says "HI"
-            cheat = 1'b0;
-            count1_next = 5'b00000; // clear 1st counter
-            // get random number for counter start time
+            HI = 1'b1; // turn on "HI"
+            LED = 1'b0; // turn LED off
+            count1_next = 0; // clear 1st counter
+            random = 3000; // get random number for counter start time
             if (start) // start button is pressed
             begin
-                count2_next = 5'b00000; // clear the 2nd counter
-                state_next = starter; // move to the next state
+                HI = 1'b0; // turn off "HI"
+                state_next = starter;
             end
         end
         starter:
-            HI = 1'b0; // turns off the "HI" message
-            sevenseg = 1'b0; // seven segment display is off
-            cheat = 1'b0; // turns off seven segment display = "9999"
-            // start 1st counter
+        begin
+            count2_next = 0; // clear the 2nd counter
+            count1_next = count1_next + 1; // start 1st counter
             if (stop) // used to pickup a false start
-                begin
-                    state_next = cheater; // move to the next state
-                end
-            if (count1 = random) // used to start the timer at a random time
-                begin
-                    state_next = test; // move to the next state
-                end
+            begin
+                count1_next = count1_next; // stop the 1st counter
+                state_next = cheater; // move to the next state
+            end
+            if (count1 == random) // used to start the timer at a random time
+            begin
+                count1_next = count1_next; // stop the 1st counter                
+                state_next = test; // move to the next state
+            end
+        end
         test:
-            HI = 1'b0; // turns off the "HI" message
-            cheat = 1'b0; // turns off seven segment display = "9999"
-            // turn on LED
-            // start 2nd counter
-            sevenseg = count2; // seven segment display = 2nd counter
-            if (count2 = 1000)
-                begin
-                    state_next = tooslow; // move to the next state
-                end
+        begin
+            LED = 1'b1; // turn on stimulus LED
+            count2_next = count2_next + 1; // start 2nd counter
+            if (count2 == 1000)
+            begin
+                count2_next = count2_next; // stop 2nd counter
+                state_next = tooslow; // move to the next state
+            end
             if (stop)
-                begin
-                    state_next = reaction; // move to the next state
-                end
+            begin
+                count2_next = count2_next; // stop 2nd counter
+                state_next = reaction; // move to the next state
+            end
+        end
         reaction:
-            HI = 1'b0; // turns off the "HI" message
-            cheat = 1'b0; // turns off seven segment display = "9999"
+        begin
             LED = 1'b0; // turn off LED
-            // stop 2nd counter
-            sevenseg = count2; // display time from the 2nd counter
-            if (reset)
-                begin
-                    state_next = init; // reset the timer
-                end
-                
+            hex0 = count2[3:0]; // display time from the 2nd counter
+            hex1 = count2[7:4]; // display time from the 2nd counter
+            hex2 = count2[11:8]; // display time from the 2nd counter
+            hex3 = count2[15:12]; // display time from the 2nd counter
+            if (reset) // reset the timer
+            begin
+                state_next = init; 
+            end
+        end        
         tooslow:
-            HI = 1'b0; // turns off the "HI" message
-            cheat = 1'b0; // turns off seven segment display = "9999"
-            led = 1'b0; // turn off LED
-            sevenseg = 1000; // seven segment display = 1000
-            if (reset)
-                begin
-                    state_next = init; // reset the timer
-                end
+        begin
+            LED = 1'b0; // turn on stimulus LED
+            SLOW = 1'b1; // turn on "1000"
+            if (reset) // reset the timer
+            begin
+                SLOW = 1'b0; // turn off "1000"
+                state_next = init;
+            end
+        end
         cheater:
-            HI = 1'b0; // turns off the "HI" message
-            cheat = 1'b1; // seven segment display = "9999"
-            if (reset)
-                begin
-                    state_next = init; // reset the timer
-                end
-        default: 
-            ERR = 1'b1; // seven segment display says "ERR"
+        begin
+            CHEAT = 1'b1; // turn on "9999"
+            if (reset) // reset the timer
+            begin
+                CHEAT = 1'b0; // turn off "9999"
+                state_next = init; 
+            end
+        end
+        default: // turn on "ERR" 
+        begin 
+            ERR = 1'b1; 
+        end
     endcase
 end
+
+assign led[15] = LED;
+assign start = btn[0];
+assign stop = btn[2];
+assign main_clock = clk;
+assign rst = reset;
+assign sseg = sevenseg;
 
 endmodule

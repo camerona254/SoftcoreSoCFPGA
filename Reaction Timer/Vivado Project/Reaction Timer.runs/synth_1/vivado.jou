@@ -2,11 +2,11 @@
 # Vivado v2018.2.2 (64-bit)
 # SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
 # IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
-# Start of session at: Sat Apr 20 18:12:46 2019
-# Process ID: 1196
-# Current directory: C:/Users/cmrnn/Desktop/Reaction Timer/Reaction Timer.runs/synth_1
-# Command line: vivado.exe -log period_counter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source period_counter.tcl
-# Log file: C:/Users/cmrnn/Desktop/Reaction Timer/Reaction Timer.runs/synth_1/period_counter.vds
-# Journal file: C:/Users/cmrnn/Desktop/Reaction Timer/Reaction Timer.runs/synth_1\vivado.jou
+# Start of session at: Sat May 11 17:09:11 2019
+# Process ID: 7776
+# Current directory: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1
+# Command line: vivado.exe -log state_machine.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source state_machine.tcl
+# Log file: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/state_machine.vds
+# Journal file: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source period_counter.tcl -notrace
+source state_machine.tcl -notrace

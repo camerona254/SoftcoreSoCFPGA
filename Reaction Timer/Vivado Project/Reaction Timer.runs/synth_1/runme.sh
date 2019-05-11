@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/cmrnn/Desktop/Reaction Timer/Reaction Timer.runs/synth_1'
+HD_PWD='C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log period_counter.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source period_counter.tcl
+EAStep vivado -log state_machine.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source state_machine.tcl
