@@ -209,3 +209,6 @@ selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, 
 // TclEventType: DG_GRAPH_GENERATED
 // [GUI Memory]: 97 MB (+1016kb) [00:27:39]
 // HMemoryUtils.trashcanNow. Engine heap size: 680 MB. GUI used memory: 43 MB. Current time: 5/11/19 1:39:02 PM CDT
+// Elapsed time: 3190 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 680 MB. GUI used memory: 42 MB. Current time: 5/11/19 2:09:03 PM CDT
