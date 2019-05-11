@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.2 (64-bit)
+# SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
+# IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
+# Start of session at: Sun Apr 21 21:29:37 2019
+# Process ID: 16908
+# Current directory: C:/Users/cmrnn/Desktop/FPGA/Reaction Timer
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14492 C:\Users\cmrnn\Desktop\FPGA\Reaction Timer\Reaction Timer.xpr
+# Log file: C:/Users/cmrnn/Desktop/FPGA/Reaction Timer/vivado.log
+# Journal file: C:/Users/cmrnn/Desktop/FPGA/Reaction Timer\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/cmrnn/Desktop/FPGA/Reaction Timer/Reaction Timer.xpr}

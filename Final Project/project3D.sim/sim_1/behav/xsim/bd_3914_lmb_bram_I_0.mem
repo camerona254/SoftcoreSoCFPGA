@@ -1,0 +1,16 @@
+// Mem file initialization records.
+//
+// SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
+// Vivado v2018.2.2 (64-bit)
+// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+// Created on Thursday May 09, 2019 - 04:52:16 pm, from:
+//
+//     Map file     - c:\Users\cmrnn\Desktop\FPGA\project3D.srcs\sources_1\ip\cpu\bd_0\bd_3914.bmm
+//     Data file(s) - c:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/ip/cpu/bd_0/ip/ip_0/data/mb_bootloop_le.elf
+//
+// Address space 'cpu_unit_inst_microblaze_I.cpu_unit_inst_lmb_bram_I_ADDR_SPACE', bit lane [31:0].
+//
+// Bus width = 32 bits, number of bus blocks = 1.
+
+@00000000
+    B8000000
