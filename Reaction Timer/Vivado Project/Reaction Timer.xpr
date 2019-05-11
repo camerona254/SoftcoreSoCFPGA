@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="C:/Users/cmrnn/Desktop/Reaction Timer/Reaction Timer.xpr">
+<Project Version="7" Minor="38" Path="C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Reaction Timer.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="356337e1e96146a8afcb52d51371cd74"/>
@@ -102,7 +102,7 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PPRDIR/../Source and Constraint Files/constraint/Nexys4_DDR_chu.xdc">
+      <File Path="$PSRCDIR/Nexys4_DDR_chu.xdc">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

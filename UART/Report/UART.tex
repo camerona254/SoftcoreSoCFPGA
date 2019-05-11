@@ -1,0 +1,79 @@
+\documentclass{article}
+\usepackage{graphicx} % new way of doing eps files
+\usepackage{listings} % nice code layout
+\usepackage[usenames]{color} % color
+\definecolor{listinggray}{gray}{0.9}
+\definecolor{graphgray}{gray}{0.7}
+\definecolor{ans}{rgb}{1,0,0}
+\definecolor{blue}{rgb}{0,0,1}
+% \Verilog{title}{label}{file}
+\newcommand{\Verilog}[3]{
+  \lstset{language=Verilog}
+  \lstset{backgroundcolor=\color{listinggray},rulecolor=\color{blue}}
+  \lstset{linewidth=\textwidth}
+  \lstset{commentstyle=\textit, stringstyle=\upshape,showspaces=false}
+  \lstset{frame=tb}
+  \lstinputlisting[caption={#1},label={#2}]{#3}
+}
+
+
+\author{Cameron Anderson}
+\title{Class Report 4: UART}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+The goal of this lab was to combine the previously created and tested modules into a single stage called Fetch. This stage fetches the instruction which is to be decoded and executed using a program counter, a mux, an adder, and a space for instruction memory.
+
+\section{Experimental Plan}
+The inputs into the iFetch module are the clock, reset, pc\_src and 64-bit branch target. The clock gives the signal by which the modules operate. The reset input resets the program counter. The pc\_src signal is the value of the pc as determined by the mux as being either the incremented value of the previous pc or the branched value.  The branch target is then the address that goes to the pc when the mux control is active.
+     
+The outputs for the module include the 64-bit incremented pc, the instruction-length op code and the current value of the pc. The current value for the pc is not actually on output from the module but is useful when testing the module. 
+
+The iFetch module also used a 64-bit bus to transfer the pc value from the mux to the pc. Additionally, a wire was used for the delayed clock signal from the delay module.
+
+\section{Analysis}
+The program counter register starts at a value that is a multiple of 4. This is because each instruction is 32-bits or 4 bytes. The value in this register is then sent to an adder and to instruction memory. The instruction memory uses the program counter value to select an instruction to be run. The adder takes the value and adds 4 to it in order to increment to the next instruction. This value, incremented\_pc, is one input to the mux. The second input is a branching instruction, known as branch\_target. The mux decides between which two values to choose based on pc\_src. If pc\_src is high, the branch is selected, if it is low, the incremented value is selected. The output from the mux then becomes the new value in the program counter register. 
+
+If pc\_src is low, the program counter increases by 4 and each instruction is fetched sequentially indefinitely. If pc\_src is high, the branch target is selected, and instructions are then executed sequentially from that point.
+
+This stage contains parameters allowing instruction size and instruction memory size to be set. 
+
+%\section{Implementation}
+%As seen in Listing~\ref{code:fetch} on page~\pageref{code:fetch}, the iFetch module is implemented by featuring the mux, delay, instruction memory, adder and register modules. The mux, adder, and register modules have been discussed in previous labs. The delay module uses an always block to delay an input clock signal by 1 nanosecond and then output that clock signal. The instruction memory module also implements an always block that outputs the binary instruction on the positive edge of the clock cycle. 
+%
+%
+%\Verilog{Verilog code for implementing a register.}{code:fetch}{../code/1_fetch/iFetch.v}
+%
+%\section{Test Bench Design}
+%For the instruction memory testbench, clock and instruction were created as wires and pc was created as a reg. A clock signal was generated using the oscillator module. Then, an instr\_mem module was instantiated and the ports were declared. The actual testing was quite simple, the program counter was %incremented by 4 to show that the proper instruction was being fetched. Additionally, clock cycle de-syncs were tested for. This testbench code can be seen in Listing~\ref{code:memtest} on page~\pageref{code:memtest}.
+%
+%\Verilog{Verilog code for testing a register.}{code:memtest}{../code/1_fetch/instr_mem_test.v}
+%
+%For the iFetch test, incremented\_pc, instruction, cur\_pc, and clock were declared as wires while reset, pc\_src, and branch\_target were declared as regs. A clock signal was generated using the oscillator module. Then, an iFetch module was instantiated and the ports were declared. The testing consisted of letting the module sequentially advance for 4 clock cycles so that the sequential part of the fetch stage could be tested. Once caveat with this portion is that reset had to be high for the first 0.6 of a cycle so that the first instruction would not be skipped. After the 4 cycles were past, pc\_src and branch\_target were set so that branching in the fetch stage could be tested. After the initial branch, pc\_src was set back to 0 and the module continued sequentially from there. This can be seen in the testbench code in Listing~\ref{code:fetchtest} on page~\pageref{code:fetchtest}.
+%
+%\Verilog{Verilog code for testing a register.}{code:fetchtest}{../code/1_fetch/iFetch_test.v}
+%
+%\section{Simulation}
+%The Simulation Results of the Instruction Memory Module Test in Figure~\ref{fig:instrsim} on page~\pageref{fig:instrsim} show that the module operates as intended by outputting the appropriate instruction for each specifically-tested value of the program counter.
+%
+%The Simulation Results of the iFetch Module Test also operated as intended.  Initially, the first instruction was skipped in the simulation because the instruction was not fetched before the first clock cycle.  This was countered by initializing the reset as active through the first cycle.  Then because each module was implementing at the positive edge of the same clock signal, the fetched instruction lagged behind a cycle because the previous program counter value was used to retrieve the instruction. To combat this issue, the delay module was implemented to delay the clock signal going into the Instruction Memory Module so that the output instruction matched the value of the current program counter. Figure~\ref{fig:ifetchsim} on page~\pageref{fig:ifetchsim} shows the iFetch Module Simulation.
+%
+\begin{figure}
+\begin{center}
+\caption{Timing diagram for the instruction memory test.}\label{fig:instrsim}
+\includegraphics[width=0.9\textwidth]{../images/instr_mem_sim.png}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+	\caption{Timing diagram for the iFetch module test.}\label{fig:ifetchsim}
+	\includegraphics[width=0.9\textwidth]{../images/iFetch_sim.png}
+\end{center}
+\end{figure}
+
+\section{Conclusion}
+The Fetch stage was successfully implemented. The Fetch stage is the first of five stages that will make up out 64-bit ARM processor. Due to the parameters we used in the Fetch stage, the instruction size and instruction memory could be changed later if need be. 
+\end{document} 
