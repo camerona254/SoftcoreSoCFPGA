@@ -67,9 +67,8 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param xicom.use_bs_reader 1
   open_checkpoint mcs_top_vanilla_routed.dcp
-  set_property webtalk.parent_dir C:/Users/cmrnn/Desktop/FPGA/project3D.cache/wt [current_project]
+  set_property webtalk.parent_dir {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.cache/wt} [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
   add_files C:/Users/cmrnn/workspace/3D/Debug/3D.elf
   set_property SCOPED_TO_REF cpu [get_files -all C:/Users/cmrnn/workspace/3D/Debug/3D.elf]

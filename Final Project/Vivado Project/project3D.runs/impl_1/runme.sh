@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/cmrnn/Desktop/FPGA/project3D.runs/impl_1'
+HD_PWD='C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

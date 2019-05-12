@@ -138,10 +138,10 @@ begin
             HI = 1'b1; // turn on "HI"
             ld[0] = 1'b0; // turn LED off
             count1_next = 0; // clear 1st counter
+            rcount = random;
             if (start) // start button is pressed
             begin
                 HI = 1'b0; // turn off "HI"
-                rcount = random;
                 state_next = starter;
             end
         end

@@ -18,13 +18,13 @@
 
 
 \author{Cameron Anderson}
-\title{Project Report: 3D project}
+\title{Project Report: 3D Project}
 
 \begin{document}
 \maketitle
 
 \section{Introduction}
-The goal of this lab was to combine the previously created and tested modules into a single stage called Fetch. This stage fetches the instruction which is to be decoded and executed using a program counter, a mux, an adder, and a space for instruction memory.
+The goal of this project was to use the ADXL362 accelerometer on the Nexys 4 DDR to map a 3d
 
 \section{Experimental Plan}
 The inputs into the iFetch module are the clock, reset, pc\_src and 64-bit branch target. The clock gives the signal by which the modules operate. The reset input resets the program counter. The pc\_src signal is the value of the pc as determined by the mux as being either the incremented value of the previous pc or the branched value.  The branch target is then the address that goes to the pc when the mux control is active.
@@ -76,4 +76,6 @@ This stage contains parameters allowing instruction size and instruction memory 
 
 \section{Conclusion}
 The Fetch stage was successfully implemented. The Fetch stage is the first of five stages that will make up out 64-bit ARM processor. Due to the parameters we used in the Fetch stage, the instruction size and instruction memory could be changed later if need be. 
+
+\section{Appendix}
 \end{document} 
