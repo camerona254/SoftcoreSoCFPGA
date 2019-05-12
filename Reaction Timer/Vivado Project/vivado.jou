@@ -2,10 +2,10 @@
 # Vivado v2018.2.2 (64-bit)
 # SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
 # IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
-# Start of session at: Sat May 11 13:01:26 2019
-# Process ID: 5988
+# Start of session at: Sat May 11 19:59:19 2019
+# Process ID: 2120
 # Current directory: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6344 C:\Users\cmrnn\Desktop\SoftcoreSoCFPGA\Reaction Timer\Vivado Project\Reaction Timer.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4388 C:\Users\cmrnn\Desktop\SoftcoreSoCFPGA\Reaction Timer\Vivado Project\Reaction Timer.xpr
 # Log file: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/vivado.log
 # Journal file: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project\vivado.jou
 #-----------------------------------------------------------
@@ -16,57 +16,10 @@ launch_runs synth_1 -jobs 2
 wait_on_run synth_1
 launch_runs impl_1 -jobs 2
 wait_on_run impl_1
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-launch_runs impl_1 -jobs 2
+launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
 reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-launch_runs impl_1 -jobs 2
-wait_on_run impl_1
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-launch_runs impl_1 -jobs 2
-wait_on_run impl_1
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
+reset_run impl_1
 launch_runs impl_1 -jobs 2
 wait_on_run impl_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
@@ -74,14 +27,7 @@ wait_on_run impl_1
 reset_run synth_1
 launch_runs synth_1 -jobs 2
 wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-export_ip_user_files -of_objects  [get_files {{C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.srcs/list_ch03_15_hex_to_sseg_test.sv}}] -no_script -reset -force -quiet
-remove_files  {{C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.srcs/list_ch03_15_hex_to_sseg_test.sv}}
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1

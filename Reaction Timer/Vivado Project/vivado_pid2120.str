@@ -1,0 +1,585 @@
+/*
+
+Xilinx Vivado v2018.2.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2348494 on Mon Oct  1 18:25:44 MDT 2018
+IP Build: 2318053 on Mon Oct  1 21:44:26 MDT 2018
+
+Process ID: 2120
+License: Customer
+
+Current time: 	Sat May 11 19:59:51 CDT 2019
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1500x1000
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 57 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	cmrnn
+User home directory: C:/Users/cmrnn
+User working directory: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/cmrnn/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/cmrnn/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/cmrnn/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/vivado.log
+Vivado journal file location: 	C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/vivado.jou
+Engine tmp dir: 	C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/.Xil/Vivado-2120-Lenny
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	153 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 527 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// [GUI Memory]: 16 MB (+13898kb) [00:00:05]
+// [Engine Memory]: 269 MB (+130988kb) [00:00:05]
+// [GUI Memory]: 19 MB (+2930kb) [00:00:10]
+// TclEventType: START_GUI
+// [GUI Memory]: 50 MB (+31488kb) [00:00:21]
+// [Engine Memory]: 481 MB (+207530kb) [00:00:21]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\cmrnn\Desktop\SoftcoreSoCFPGA\Reaction Timer\Vivado Project\Reaction Timer.xpr. Version: Vivado v2018.2.2 
+// [GUI Memory]: 59 MB (+6591kb) [00:00:22]
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 536 MB. GUI used memory: 37 MB. Current time: 5/11/19 7:59:53 PM CDT
+// [Engine Memory]: 536 MB (+32933kb) [00:00:27]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 589 MB (+27182kb) [00:00:30]
+// [Engine Memory]: 619 MB (+250kb) [00:00:34]
+// [GUI Memory]: 63 MB (+1491kb) [00:00:35]
+// Project name: Reaction Timer; location: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:15 . Memory (MB): peak = 806.828 ; gain = 133.285 
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 32 seconds
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR_AND_CRITICAL_WARNING_MESSAGES, "1 critical warning"); // h (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis]", 0); // ah (O, ck)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis]", 0); // ah (O, ck)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation]", 2); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.srcs/Nexys4_DDR_chu.xdc:71]. ]", 4, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "ID;-;[Common 17-55];-;;-;16;-;Resolution;-;If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.;-;;-;16;-;"); // ah (O, ck)
+// 'Common 17-55' Message Details: show
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.srcs/Nexys4_DDR_chu.xdc:71]. ]", 4, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\cmrnn\Desktop\SoftcoreSoCFPGA\Reaction Timer\Vivado Project\Reaction Timer.srcs\Nexys4_DDR_chu.xdc;-;;-;16;-;line;-;71;-;;-;16;-;"); // ah (O, ck)
+// PAPropertyPanels.initPanels (Nexys4_DDR_chu.xdc) elapsed time: 0.2s
+// HMemoryUtils.trashcanNow. Engine heap size: 651 MB. GUI used memory: 42 MB. Current time: 5/11/19 8:00:53 PM CDT
+// [Engine Memory]: 651 MB (+1031kb) [00:01:27]
+// Elapsed time: 15 seconds
+selectCodeEditor("Nexys4_DDR_chu.xdc", 11, 214); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("Nexys4_DDR_chu.xdc", 550, 388); // ce (w, ck)
+selectCodeEditor("Nexys4_DDR_chu.xdc", 89, 217, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+// [GUI Memory]: 72 MB (+5844kb) [00:01:52]
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // ad (aj, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, state_machine (state_machine.sv)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, state_machine (state_machine.sv)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("state_machine.sv", 154, 270); // ce (w, ck)
+// [GUI Memory]: 76 MB (+70kb) [00:02:01]
+selectCodeEditor("state_machine.sv", 448, 305); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 481, 271); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 493, 386); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 121, 192); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 117, 354); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 117, 311); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 119, 229); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 28 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys4_DDR_chu.xdc", 1); // k (j, ck)
+selectCodeEditor("Nexys4_DDR_chu.xdc", 575, 64); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// aj (ck): Save Project: addNotify
+dismissDialog("Run Synthesis"); // A (ck)
+// [GUI Memory]: 81 MB (+1375kb) [00:03:07]
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// TclEventType: FILE_SET_CHANGE
+// bx (ck):  Save Constraints : addNotify
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Sat May 11 20:02:38 2019] Launched synth_1... Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 6 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, state_machine (state_machine.sv), clock_divider : clock_divider (clock_divider.sv)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, state_machine (state_machine.sv), clock_divider : clock_divider (clock_divider.sv)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "state_machine.sv", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_divider.sv", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "state_machine.sv", 2); // k (j, ck)
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys4_DDR_chu.xdc", 1); // k (j, ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 19 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Sat May 11 20:03:45 2019] Launched impl_1... Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 9 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "state_machine.sv", 2); // k (j, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 671 MB. GUI used memory: 43 MB. Current time: 5/11/19 8:04:09 PM CDT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_divider.sv", 3); // k (j, ck)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 47 seconds
+selectCodeEditor("clock_divider.sv", 393, 107); // ce (w, ck)
+selectCodeEditor("clock_divider.sv", 143, 8); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "state_machine.sv", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_divider.sv", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "state_machine.sv", 2); // k (j, ck)
+// [GUI Memory]: 86 MB (+1348kb) [00:05:47]
+// TclEventType: RUN_COMPLETED
+// ah (ck): Implementation Completed: addNotify
+// Elapsed time: 35 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Sat May 11 20:05:43 2019] Launched impl_1... Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// ah (ck): Bitstream Generation Failed: addNotify
+// Elapsed time: 287 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Failed"); // ah (ck)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys4_DDR_chu.xdc", 1); // k (j, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("Nexys4_DDR_chu.xdc", 447, 178); // ce (w, ck)
+selectCodeEditor("Nexys4_DDR_chu.xdc", 92, 275, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // ad (aj, ck)
+selectCodeEditor("Nexys4_DDR_chu.xdc", 299, 328); // ce (w, ck)
+selectCodeEditor("Nexys4_DDR_chu.xdc", 631, 359); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// i (ck): Reset and Re-run: addNotify
+selectButton(RDIResource.BaseDialog_NO, "Run from Step: write_bitstream"); // a (i)
+// aj (ck): Save Project: addNotify
+dismissDialog("Reset and Re-run"); // i (ck)
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// TclEventType: FILE_SET_CHANGE
+// bx (ck):  Save Constraints : addNotify
+// A (ck): Synthesis is Out-of-date: addNotify
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Save Project"); // aj (ck)
+// [GUI Memory]: 93 MB (+2509kb) [00:11:50]
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Sat May 11 20:11:22 2019] Launched synth_1... Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log [Sat May 11 20:11:22 2019] Launched impl_1... Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 13 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 54 seconds
+selectCheckBox(PAResourceItoN.MsgView_ERROR_MESSAGES, (String) null, true); // g (aQ, ck): TRUE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-55] 'set_property' expects at least one object. [C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.srcs/Nexys4_DDR_chu.xdc:57]. ]", 1, true); // ah (O, ck) - Node
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-55] 'set_property' expects at least one object. [C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.srcs/Nexys4_DDR_chu.xdc:57]. ]", 1); // ah (O, ck)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-55] 'set_property' expects at least one object. [C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.srcs/Nexys4_DDR_chu.xdc:57]. ]", 1); // ah (O, ck)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 49 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-55] 'set_property' expects at least one object. [C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.srcs/Nexys4_DDR_chu.xdc:57]. ]", 1, true); // ah (O, ck) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-55] 'set_property' expects at least one object. [C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.srcs/Nexys4_DDR_chu.xdc:57]. ]", 1, true); // ah (O, ck) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis]", 0, true, false, false, false, true, false); // ah (O, ck) - Popup Trigger - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-55] 'set_property' expects at least one object. [C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.srcs/Nexys4_DDR_chu.xdc:57]. ]", 1, true, false, false, false, true, false); // ah (O, ck) - Popup Trigger - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-55] 'set_property' expects at least one object. [C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.srcs/Nexys4_DDR_chu.xdc:57]. ]", 1, true, false, false, false, true, false); // ah (O, ck) - Popup Trigger - Node
+// [Engine Memory]: 685 MB (+2112kb) [00:13:58]
+// TclEventType: RUN_COMPLETED
+// ah (ck): Implementation Completed: addNotify
+// Elapsed time: 59 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Sat May 11 20:14:21 2019] Launched impl_1... Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// ah (ck): Bitstream Generation Failed: addNotify
+// Elapsed time: 213 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ah (ck)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ck)
+// Elapsed time: 10 seconds
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream]", 5); // ah (O, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LFSR_fib168 (fibonacci.sv)]", 8, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LFSR_fib168 (fibonacci.sv)]", 8, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LFSR_fib168 (fibonacci.sv)]", 8, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 70 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "state_machine.sv", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fibonacci.sv", 4); // k (j, ck)
+selectCodeEditor("fibonacci.sv", 177, 352); // ce (w, ck)
+selectCodeEditor("fibonacci.sv", 124, 97); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "state_machine.sv", 2); // k (j, ck)
+// Elapsed time: 23 seconds
+selectCodeEditor("state_machine.sv", 123, 280); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 123, 280); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 396, 124); // ce (w, ck)
+// Elapsed time: 80 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_divider.sv", 3); // k (j, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("clock_divider.sv", 285, 334); // ce (w, ck)
+selectCodeEditor("clock_divider.sv", 43, 327); // ce (w, ck)
+selectCodeEditor("clock_divider.sv", 116, 337); // ce (w, ck)
+selectCodeEditor("clock_divider.sv", 117, 336, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("clock_divider.sv", 117, 336); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "state_machine.sv", 2); // k (j, ck)
+selectCodeEditor("state_machine.sv", 199, 214); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 111, 233); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 103, 177); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 103, 177, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("state_machine.sv", 92, 197); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 92, 197, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("state_machine.sv", 92, 197); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 132, 198); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 120, 200); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("state_machine.sv", 117, 282); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("state_machine.sv", 131, 178); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 122, 310); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("state_machine.sv", 123, 298); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 118, 289); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 126, 288); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 126, 284, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("state_machine.sv", 116, 276); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 58 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys4_DDR_chu.xdc", 1); // k (j, ck)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys4_DDR_chu.xdc", 1, true, false); // k (j, ck) - Popup Trigger
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys4_DDR_chu.xdc", 1); // k (j, ck)
+// Elapsed time: 107 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+// [GUI Memory]: 98 MB (+455kb) [00:26:47]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_divider.sv", 3); // k (j, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// aj (ck): Save Project: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// bx (ck):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat May 11 20:26:28 2019] Launched synth_1... Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 691 MB. GUI used memory: 46 MB. Current time: 5/11/19 8:26:34 PM CDT
+// Elapsed time: 58 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fibonacci.sv", 4); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_divider.sv", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "state_machine.sv", 2); // k (j, ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Resetting Runs : addNotify
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Sat May 11 20:27:35 2019] Launched impl_1... Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+selectCodeEditor("state_machine.sv", 120, 145); // ce (w, ck)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 34 seconds
+selectCodeEditor("state_machine.sv", 122, 143); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("state_machine.sv", 82, 153); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 76, 143); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 86, 148); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 47, 146); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 45, 145, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 27 seconds
+selectCodeEditor("state_machine.sv", 2, 179, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: RUN_COMPLETED
+// ah (ck): Implementation Completed: addNotify
+// Elapsed time: 36 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// bx (ck):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// f (ck): Launch Runs: addNotify
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+dismissDialog("Launch Runs"); // f (ck)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat May 11 20:29:44 2019] Launched impl_1... Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+selectCodeEditor("state_machine.sv", 50, 222); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("state_machine.sv", 56, 213); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fibonacci.sv", 4); // k (j, ck)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_divider.sv", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "state_machine.sv", 2); // k (j, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("state_machine.sv", 576, 243); // ce (w, ck)
+// TclEventType: RUN_FAILED
+// ah (ck): Bitstream Generation Failed: addNotify
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Failed"); // ah (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fibonacci.sv", 4); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "state_machine.sv", 2); // k (j, ck)
+selectCodeEditor("state_machine.sv", 59, 266); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fibonacci.sv", 4); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_divider.sv", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "state_machine.sv", 2); // k (j, ck)
+selectCodeEditor("state_machine.sv", 58, 194); // ce (w, ck)
+// Elapsed time: 34 seconds
+selectCodeEditor("state_machine.sv", 98, 244); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 94, 45); // ce (w, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("state_machine.sv", 132, 174); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("state_machine.sv", 287, 187); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 211, 186); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 206, 193); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fibonacci.sv", 4); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_divider.sv", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "state_machine.sv", 2); // k (j, ck)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fibonacci.sv", 4); // k (j, ck)
+// Elapsed time: 36 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "state_machine.sv", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys4_DDR_chu.xdc", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "state_machine.sv", 2); // k (j, ck)
+// Elapsed time: 23 seconds
+selectCodeEditor("state_machine.sv", 242, 212); // ce (w, ck)
+// Elapsed time: 67 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fibonacci.sv", 4); // k (j, ck)
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "state_machine.sv", 2); // k (j, ck)
+// Elapsed time: 12 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 70 seconds
+selectCodeEditor("state_machine.sv", 98, 196); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("state_machine.sv", 243, 200); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 258, 193); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 41 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys4_DDR_chu.xdc", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "state_machine.sv", 2); // k (j, ck)
+// Elapsed time: 25 seconds
+selectCodeEditor("state_machine.sv", 452, 216); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("state_machine.sv", 581, 230); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("state_machine.sv", 448, 105); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("state_machine.sv", 306, 149); // ce (w, ck)
+selectCodeEditor("state_machine.sv", 253, 282); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 19 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys4_DDR_chu.xdc", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "state_machine.sv", 2); // k (j, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Sat May 11 20:40:09 2019] Launched synth_1... Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_FAILED
+// [GUI Memory]: 104 MB (+923kb) [00:41:03]
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 63 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ck)
+closeMainWindow("Reaction Timer - [C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.xpr] - Vivado 2018.2.2"); // ck
+// A (ck): Exit Vivado: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+dismissDialog("Exit Vivado"); // A (ck)
+selectCodeEditor("state_machine.sv", 64, 249); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat May 11 20:41:36 2019] Launched synth_1... Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)

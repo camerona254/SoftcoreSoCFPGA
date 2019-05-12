@@ -30,9 +30,10 @@ set_property ip_output_repo {c:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Tim
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib -sv {
   {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.srcs/ch04_15_disp_mux.sv}
-  {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.srcs/sources_1/new/clock_divider.sv}
   {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.srcs/list_ch03_14_hex_to_sseg.sv}
   {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.srcs/sources_1/new/state_machine.sv}
+  {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.srcs/sources_1/new/clock_divider.sv}
+  {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.srcs/sources_1/new/fibonacci.sv}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

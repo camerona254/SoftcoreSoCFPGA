@@ -5,34 +5,67 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-// N = 2 to display microseconds
-// N = 5 to display milliseconds
-// N = 8 to display seconds
-
 module clock_divider
     (
     input logic clk, // input of 100MHz system clock
     input logic reset, // input to reset the counter
-    output logic [3:0] display_clk // outputs 4 digits to represent whichever fraction of a second the user chooses
+    output logic ms_clk // outputs 4 digits to represent whichever fraction of a second the user chooses
     );
    
-    localparam N = 5; // used to set the 4 display digits
-    // N = 2 to display microseconds
-    // N = 5 to display milliseconds
-    // N = 8 to display seconds
+    typedef enum {minus, ms_zero, ms_one} state_type;
     
-    logic [11:0] count; // counter mirrors system clock and overruns at 10 seconds
-    
-    always_ff @(posedge clk) // increments the counter with each period of the system clock
+    // declarations
+    state_type state_reg, state_next;
+    logic [15:0] count;
+    logic [15:0] count_next; 
+
+    always_ff @(posedge clk, posedge reset) 
         if (reset)
+        begin
+            state_reg <= ms_zero;
+        end
+        else
+        begin
+            state_reg <= state_next;
+            count <= count_next;
+        end
+        
+    always_comb
+    begin
+        state_next = state_reg;
+        case (state_reg)
+            ms_one:
             begin
-                count <= 12'b000000000000;
+                ms_clk = 0;
+                count_next = 16'd50000;
+                state_next = minus;
             end
-          else
+            ms_zero:
             begin
-                count <= count+1;
+                ms_clk = 1;
+                count_next = 16'd50000;
+                state_next = minus;
             end
+            minus:
+            begin
+                if (count == 0 && ms_clk == 0)
+                begin
+                    state_next = ms_zero;
+                end
+                else if (count == 0 && ms_clk == 1)
+                begin
+                    state_next = ms_one;
+                end
+                else
+                begin
+                    count_next = count_next - 1;
+                end
+            end
+            default:
+            begin
             
-    assign display_clk = count[N+3:N]; // sends the seconds, milliseconds, or microseconds to the display clock
+            end // error
+        endcase
+    end  
 
 endmodule

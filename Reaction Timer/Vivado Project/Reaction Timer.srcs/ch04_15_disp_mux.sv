@@ -9,7 +9,7 @@ module disp_mux
     input  logic CHEATER, // input to display "9999" on the seven segment display
     input  logic [7:0] in3, in2, in1, in0, // in 0 is the 8-digit binary combination used to light specific portions of the rightmost digit (active low)
     output logic [3:0] an,   // anode 0 is the rightmost digit on the board (8 total anodes)
-    output logic [7:0] ssegd  // this output mirrors the in input to light the specific portions of the active number
+    output logic [7:0] sseg  // this output mirrors the in input to light the specific portions of the active number
    );
   
    localparam N = 18; // refreshing rate around 800 Hz (50 MHz/2^16)
@@ -42,23 +42,23 @@ module disp_mux
                an = 4'b1110;
                if (HI == 1'b1)
                 begin
-                    ssegd = 8'b11111001; // I
+                    sseg = 8'b11111001; // I
                 end
                else if (ERR == 1'b1)
                 begin
-                    ssegd = 8'b10001000; // R
+                    sseg = 8'b10001000; // R
                 end
                else if (SLOW == 1'b1)
                 begin
-                    ssegd = 8'b11000000; // 0
+                    sseg = 8'b11000000; // 0
                 end 
                else if (CHEATER == 1'b1)
                 begin
-                    ssegd = 8'b10010000; // 9
+                    sseg = 8'b10010000; // 9
                 end
                else
                 begin
-                    ssegd = in0;
+                    sseg = in0;
                 end
             end
          2'b01:
@@ -66,23 +66,23 @@ module disp_mux
                an =  4'b1101;
                if (HI == 1'b1)
                 begin
-                    ssegd = 8'b10001001; // H
+                    sseg = 8'b10001001; // H
                 end
                else if (ERR == 1'b1)
                 begin
-                    ssegd = 8'b10001000; // R
+                    sseg = 8'b10001000; // R
                 end
                else if (SLOW == 1'b1)
                  begin
-                     ssegd = 8'b11000000; // 0
+                     sseg = 8'b11000000; // 0
                  end 
                else if (CHEATER == 1'b1)
                  begin
-                     ssegd = 8'b10010000; // 9
+                     sseg = 8'b10010000; // 9
                  end
                else
                 begin
-                    ssegd = in1;
+                    sseg = in1;
                 end
             end
          2'b10:
@@ -90,23 +90,23 @@ module disp_mux
                an =  4'b1011;
                if (HI == 1'b1)
                 begin
-                    ssegd = 8'b11111111; // blank
+                    sseg = 8'b11111111; // blank
                 end
                else if (ERR == 1'b1)
                 begin
-                    ssegd = 8'b10000110; // E
+                    sseg = 8'b10000110; // E
                 end
                else if (SLOW == 1'b1)
                  begin
-                     ssegd = 8'b11000000; // 0
+                     sseg = 8'b11000000; // 0
                  end                 
                else if (CHEATER == 1'b1)
                  begin
-                     ssegd = 8'b10010000; // 9
+                     sseg = 8'b10010000; // 9
                  end
                else
                 begin
-                    ssegd = in2;
+                    sseg = in2;
                 end
             end
          default:
@@ -114,23 +114,23 @@ module disp_mux
                an =  4'b0111;
                if (HI == 1'b1)
                 begin
-                    ssegd = 8'b11111111; // blank
+                    sseg = 8'b11111111; // blank
                 end
                else if (ERR == 1'b1)
                 begin
-                    ssegd = 8'b11111111; // blank
+                    sseg = 8'b11111111; // blank
                 end
                else if (SLOW == 1'b1)
                  begin
-                     ssegd = 8'b11111001; // 1
+                     sseg = 8'b11111001; // 1
                  end                 
                else if (CHEATER == 1'b1)
                 begin
-                    ssegd = 8'b10010000; // 9
+                    sseg = 8'b10010000; // 9
                 end
                else
                 begin
-                    ssegd = in3;
+                    sseg = in3;
                 end
             end
        endcase

@@ -2,121 +2,48 @@
 # Vivado v2018.2.2 (64-bit)
 # SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
 # IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
-# Start of session at: Sat May 11 13:01:26 2019
-# Process ID: 5988
+# Start of session at: Sat May 11 19:59:19 2019
+# Process ID: 2120
 # Current directory: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6344 C:\Users\cmrnn\Desktop\SoftcoreSoCFPGA\Reaction Timer\Vivado Project\Reaction Timer.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4388 C:\Users\cmrnn\Desktop\SoftcoreSoCFPGA\Reaction Timer\Vivado Project\Reaction Timer.xpr
 # Log file: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/vivado.log
 # Journal file: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.xpr}
-INFO: [Project 1-313] Project file moved from 'C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
-open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:11 . Memory (MB): peak = 822.813 ; gain = 168.141
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:15 . Memory (MB): peak = 806.828 ; gain = 133.285
 reset_run synth_1
 launch_runs synth_1 -jobs 2
-[Sat May 11 15:38:10 2019] Launched synth_1...
+[Sat May 11 20:02:38 2019] Launched synth_1...
 Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log
 launch_runs impl_1 -jobs 2
-[Sat May 11 15:39:42 2019] Launched impl_1...
-Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-[Sat May 11 15:42:01 2019] Launched synth_1...
-Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-[Sat May 11 15:44:51 2019] Launched synth_1...
-Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-[Sat May 11 15:51:44 2019] Launched synth_1...
-Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-[Sat May 11 15:56:56 2019] Launched synth_1...
-Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-[Sat May 11 15:58:43 2019] Launched synth_1...
-Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 2
-[Sat May 11 15:59:40 2019] Launched impl_1...
-Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-[Sat May 11 16:04:39 2019] Launched synth_1...
-Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-[Sat May 11 16:05:43 2019] Launched synth_1...
-Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 2
-[Sat May 11 16:06:40 2019] Launched impl_1...
-Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-[Sat May 11 16:09:24 2019] Launched synth_1...
-Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-[Sat May 11 16:13:06 2019] Launched synth_1...
-Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-[Sat May 11 16:14:44 2019] Launched synth_1...
-Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-[Sat May 11 16:17:50 2019] Launched synth_1...
-Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 2
-[Sat May 11 16:18:43 2019] Launched impl_1...
-Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-[Sat May 11 16:25:51 2019] Launched synth_1...
-Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-[Sat May 11 16:27:03 2019] Launched synth_1...
-Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-[Sat May 11 16:28:47 2019] Launched synth_1...
-Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-[Sat May 11 16:30:22 2019] Launched synth_1...
-Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 2
-[Sat May 11 16:32:53 2019] Launched impl_1...
+[Sat May 11 20:03:45 2019] Launched impl_1...
 Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/impl_1/runme.log
 launch_runs impl_1 -to_step write_bitstream -jobs 2
-[Sat May 11 16:34:47 2019] Launched impl_1...
+[Sat May 11 20:05:43 2019] Launched impl_1...
+Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/impl_1/runme.log
+reset_run synth_1
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+[Sat May 11 20:11:22 2019] Launched synth_1...
+Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log
+[Sat May 11 20:11:22 2019] Launched impl_1...
+Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 11 20:14:21 2019] Launched impl_1...
 Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/impl_1/runme.log
 reset_run synth_1
 launch_runs synth_1 -jobs 2
-[Sat May 11 17:02:20 2019] Launched synth_1...
+[Sat May 11 20:26:28 2019] Launched synth_1...
 Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-[Sat May 11 17:03:34 2019] Launched synth_1...
-Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-[Sat May 11 17:06:52 2019] Launched synth_1...
-Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log
-export_ip_user_files -of_objects  [get_files {{C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.srcs/list_ch03_15_hex_to_sseg_test.sv}}] -no_script -reset -force -quiet
-remove_files  {{C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.srcs/list_ch03_15_hex_to_sseg_test.sv}}
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-[Sat May 11 17:09:07 2019] Launched synth_1...
-Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log
-exit
-INFO: [Common 17-206] Exiting Vivado at Sat May 11 17:19:46 2019...
+launch_runs impl_1 -jobs 2
+[Sat May 11 20:27:35 2019] Launched impl_1...
+Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 11 20:29:44 2019] Launched impl_1...
+Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/impl_1/runme.log
