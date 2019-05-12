@@ -1,0 +1,78 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
+| Date         : Sat May 11 21:10:54 2019
+| Host         : Lenny running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file state_machine_control_sets_placed.rpt
+| Design       : state_machine
+| Device       : xc7a100t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    12 |
+| Unused register locations in slices containing registers |    34 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            3 |
+|      6 |            2 |
+|    16+ |            7 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             124 |           25 |
+| No           | No                    | Yes                    |             346 |           37 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              32 |            6 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------+---------------------------------+------------------+------------------+----------------+
+|                Clock Signal               |          Enable Signal          | Set/Reset Signal | Slice Load Count | Bel Load Count |
++-------------------------------------------+---------------------------------+------------------+------------------+----------------+
+| ~clock_divider/state_reg[0]               |                                 |                  |                1 |              2 |
+|  HI_reg_i_2_n_0                           |                                 |                  |                1 |              2 |
+|  ld_reg[0]_i_2_n_0                        |                                 |                  |                1 |              2 |
+|  ms_clk_BUFG                              |                                 |                  |                2 |              6 |
+|  rcount_reg[12]_i_1_n_0                   |                                 |                  |                1 |              6 |
+|  clk_IBUF_BUFG                            |                                 |                  |                6 |             24 |
+|  clock_divider/count_next_reg[15]_i_2_n_0 |                                 |                  |                4 |             32 |
+|  clk_IBUF_BUFG                            | clock_divider/count[15]_i_1_n_0 |                  |                6 |             32 |
+|  count2_next_reg[15]_i_2_n_0              |                                 |                  |                7 |             32 |
+|  count1_next_reg[15]_i_2_n_0              |                                 |                  |                5 |             32 |
+|  ms_clk_BUFG                              |                                 | reset_IBUF       |                9 |             70 |
+|  clk_IBUF_BUFG                            |                                 | reset_IBUF       |               28 |            276 |
++-------------------------------------------+---------------------------------+------------------+------------------+----------------+
+
+
