@@ -13,7 +13,7 @@ module state_machine
     input logic [1:0] btn,
     output logic [3:0] an,
     output logic [7:0] sseg,    
-    output logic ld[0]
+    output logic [15:0] led
     );
     
 // fsm state type
@@ -136,7 +136,7 @@ begin
         init:
         begin
             HI = 1'b1; // turn on "HI"
-            ld[0] = 1'b0; // turn LED off
+            led[0] = 1'b0; // turn LED off
             count1_next = 0; // clear 1st counter
             rcount = random;
             if (start) // start button is pressed
@@ -162,7 +162,7 @@ begin
         end
         test:
         begin
-            ld[0] = 1'b1; // turn on stimulus LED
+            led[0] = 1'b1; // turn on stimulus LED
             count2_next = count2_next + 1; // start 2nd counter
             if (count2 == 1000)
             begin
@@ -177,7 +177,7 @@ begin
         end
         reaction:
         begin
-            ld[0] = 1'b0; // turn off LED
+            led[0] = 1'b0; // turn off LED
             hex0 = count2[3:0]; // display time from the 2nd counter
             hex1 = count2[7:4]; // display time from the 2nd counter
             hex2 = count2[11:8]; // display time from the 2nd counter
@@ -189,7 +189,7 @@ begin
         end        
         tooslow:
         begin
-            ld[0] = 1'b0; // turn on stimulus LED
+            led[0] = 1'b0; // turn on stimulus LED
             SLOW = 1'b1; // turn on "1000"
             if (reset) // reset the timer
             begin

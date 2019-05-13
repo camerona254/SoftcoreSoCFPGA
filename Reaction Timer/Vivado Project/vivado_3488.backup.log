@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.2 (64-bit)
+# SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
+# IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
+# Start of session at: Mon May 13 14:33:10 2019
+# Process ID: 3488
+# Current directory: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8352 C:\Users\cmrnn\Desktop\SoftcoreSoCFPGA\Reaction Timer\Vivado Project\Reaction Timer.xpr
+# Log file: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/vivado.log
+# Journal file: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 800.238 ; gain = 124.980
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Mon May 13 14:34:28 2019] Launched synth_1...
+Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Mon May 13 14:35:51 2019] Launched impl_1...
+Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Mon May 13 14:37:49 2019] Launched synth_1...
+Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Mon May 13 14:40:37 2019] Launched synth_1...
+Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Mon May 13 14:41:35 2019] Launched impl_1...
+Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon May 13 14:43:36 2019] Launched impl_1...
+Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Reaction Timer/Vivado Project/Reaction Timer.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 13 14:47:21 2019...

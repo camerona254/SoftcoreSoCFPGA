@@ -2,64 +2,36 @@
 # Vivado v2018.2.2 (64-bit)
 # SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
 # IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
-# Start of session at: Sun May 12 15:05:12 2019
-# Process ID: 13708
+# Start of session at: Mon May 13 14:49:00 2019
+# Process ID: 13544
 # Current directory: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8676 C:\Users\cmrnn\Desktop\SoftcoreSoCFPGA\Final Project\Vivado Project\project3D.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2528 C:\Users\cmrnn\Desktop\SoftcoreSoCFPGA\Final Project\Vivado Project\project3D.xpr
 # Log file: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/vivado.log
 # Journal file: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.xpr}
-INFO: [Project 1-313] Project file moved from 'C:/Users/cmrnn/Desktop/FPGA' since last save.
-WARNING: [Project 1-312] File not found as 'C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/workspace/3D/Debug/3D.elf'; using path 'C:/Users/cmrnn/workspace/3D/Debug/3D.elf' instead.
-WARNING: [Project 1-312] File not found as 'C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/workspace/3D/Debug/3D.elf'; using path 'C:/Users/cmrnn/workspace/3D/Debug/3D.elf' instead.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/cmrnn/workspace/3D/Debug/3D.elf'.
 Scanning sources...
 Finished scanning sources
-WARNING: [Project 1-312] File not found as 'C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/workspace/3D/Debug/3D.elf'; using path 'C:/Users/cmrnn/workspace/3D/Debug/3D.elf' instead.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
-open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:19 . Memory (MB): peak = 828.148 ; gain = 144.926
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 848.465 ; gain = 162.379
 update_compile_order -fileset sources_1
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-[Sun May 12 15:10:43 2019] Launched impl_1...
-Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.runs/impl_1/runme.log
-open_run impl_1
-INFO: [Netlist 29-17] Analyzing 290 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2018.2.2
-INFO: [Device 21-403] Loading part xc7a100tcsg324-1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.407 . Memory (MB): peak = 1729.012 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.409 . Memory (MB): peak = 1729.012 ; gain = 0.000
-Generating merged BMM file for the design top 'mcs_top_vanilla'...
-INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: C:/Users/cmrnn/workspace/3D/Debug/3D.elf 
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 175 instances were transformed.
-  LUT6_2 => LUT6_2 (LUT5, LUT6): 79 instances
-  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 64 instances
-  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 16 instances
-  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 16 instances
-
-open_run: Time (s): cpu = 00:00:45 ; elapsed = 00:00:43 . Memory (MB): peak = 1800.488 ; gain = 952.555
-open_hw
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-[Sun May 12 15:27:18 2019] Launched impl_1...
-Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.runs/impl_1/runme.log
-file copy -force {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.runs/impl_1/mcs_top_vanilla.sysdef} {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/Bitstream/mcs_top_vanilla.hdf}
-
-export_ip_user_files -of_objects  [get_files C:/Users/cmrnn/workspace/3D/Debug/3D.elf] -no_script -reset -force -quiet
-remove_files  C:/Users/cmrnn/workspace/3D/Debug/3D.elf
+add_files -norecurse {{C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/SDK Projects/3daccel_cpp/Debug/3daccel.elf}}
+set_property used_in_simulation 0 [get_files {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/SDK Projects/3daccel_cpp/Debug/3daccel.elf}]
+WARNING: [Vivado 12-818] No files matched 'C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final'
+WARNING: [Vivado 12-818] No files matched 'Project/SDK'
+WARNING: [Vivado 12-818] No files matched 'Projects/3daccel_cpp/Debug/3daccel.elf'
+ERROR: [Common 17-55] 'set_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+add_files -fileset sim_1 -norecurse {{C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/SDK Projects/3daccel_cpp/Debug/3daccel.elf}}
+set_property SCOPED_TO_REF "" [get_files -all -of_objects [get_fileset sim_1] {C:/Users/cmrnn/workspace/3D/Debug/3D.elf}]
+set_property SCOPED_TO_CELLS { } [get_files -all -of_objects [get_fileset sim_1] {C:/Users/cmrnn/workspace/3D/Debug/3D.elf}]
+set_property SCOPED_TO_REF cpu [get_files -all -of_objects [get_fileset sources_1] {{C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/SDK Projects/3daccel_cpp/Debug/3daccel.elf}}]
+set_property SCOPED_TO_CELLS { inst/microblaze_I } [get_files -all -of_objects [get_fileset sources_1] {{C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/SDK Projects/3daccel_cpp/Debug/3daccel.elf}}]
+set_property SCOPED_TO_REF cpu [get_files -all -of_objects [get_fileset sim_1] {{C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/SDK Projects/3daccel_cpp/Debug/3daccel.elf}}]
+set_property SCOPED_TO_CELLS { inst/microblaze_I } [get_files -all -of_objects [get_fileset sim_1] {{C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/SDK Projects/3daccel_cpp/Debug/3daccel.elf}}]
 exit
-INFO: [Common 17-206] Exiting Vivado at Sun May 12 16:28:18 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon May 13 15:02:10 2019...

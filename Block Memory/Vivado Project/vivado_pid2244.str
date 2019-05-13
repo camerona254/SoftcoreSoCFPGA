@@ -1,0 +1,184 @@
+/*
+
+Xilinx Vivado v2018.2.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2348494 on Mon Oct  1 18:25:44 MDT 2018
+IP Build: 2318053 on Mon Oct  1 21:44:26 MDT 2018
+
+Process ID: 2244
+License: Customer
+
+Current time: 	Mon May 13 14:48:14 CDT 2019
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1500x1000
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 57 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	cmrnn
+User home directory: C:/Users/cmrnn
+User working directory: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Block Memory/Vivado Project
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/cmrnn/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/cmrnn/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/cmrnn/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Block Memory/Vivado Project/vivado.log
+Vivado journal file location: 	C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Block Memory/Vivado Project/vivado.jou
+Engine tmp dir: 	C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Block Memory/Vivado Project/.Xil/Vivado-2244-Lenny
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	179 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 520 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// [GUI Memory]: 16 MB (+13898kb) [00:00:05]
+// [Engine Memory]: 270 MB (+132131kb) [00:00:05]
+// [GUI Memory]: 19 MB (+2930kb) [00:00:10]
+// TclEventType: START_GUI
+// [GUI Memory]: 62 MB (+43695kb) [00:00:24]
+// [Engine Memory]: 484 MB (+209627kb) [00:00:24]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\cmrnn\Desktop\SoftcoreSoCFPGA\Block Memory\Vivado Project\Block Memory.xpr. Version: Vivado v2018.2.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Block Memory/Vivado Project/Block Memory.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 563 MB. GUI used memory: 35 MB. Current time: 5/13/19 2:48:17 PM CDT
+// [Engine Memory]: 563 MB (+57795kb) [00:00:30]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 592 MB (+699kb) [00:00:33]
+// [Engine Memory]: 635 MB (+13845kb) [00:00:36]
+// Tcl Message: open_project {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Block Memory/Vivado Project/Block Memory.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 848.523 ; gain = 140.527 
+// Project name: Block Memory; location: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Block Memory/Vivado Project; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 14 seconds
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR_AND_CRITICAL_WARNING_MESSAGES, "16 critical warnings"); // h (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-55] 'set_property' expects at least one object. [C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Block Memory/Vivado Project/Block Memory.srcs/constrs_1/imports/constraint/Nexys4_DDR_chu.xdc:86]. ]", 1); // ah (O, ck)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1447 ms. Increasing delay to 3000 ms.
+// PAPropertyPanels.initPanels (sw2hex.sv) elapsed time: 0.4s
+// Elapsed time: 28 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sw2hex (sw2hex.sv)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sw2hex (sw2hex.sv)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// [GUI Memory]: 67 MB (+2321kb) [00:01:29]
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sw2hex (sw2hex.sv), disp_hex_mux : disp_hex_mux (ch04_17_disp_hex_mux.sv)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rd_wr_state_machine (rd_wr_state_machine.sv)]", 3, true); // B (D, ck) - Node
+// [GUI Memory]: 71 MB (+641kb) [00:01:42]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rd_wr_state_machine (rd_wr_state_machine.sv)]", 3, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rd_wr_state_machine (rd_wr_state_machine.sv)]", 3, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// bx (ck):  Set as Top : addNotify
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top rd_wr_state_machine [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Set as Top"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 718ms to process. Increasing delay to 3000 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 75 MB (+292kb) [00:01:56]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 83 MB (+4120kb) [00:02:02]
+// WARNING: HTimer (StateMonitor Timer) is taking 1311ms to process. Increasing delay to 4000 ms.
+// Elapsed time: 256 seconds
+selectCodeEditor("rd_wr_state_machine.sv", 83, 209); // ce (w, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 83, 23); // ce (w, ck)
+typeControlKey((HResource) null, "rd_wr_state_machine.sv", 'c'); // ce (w, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 96, 196); // ce (w, ck)
+typeControlKey((HResource) null, "rd_wr_state_machine.sv", 'v'); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 670 MB. GUI used memory: 43 MB. Current time: 5/13/19 2:54:37 PM CDT
+// [Engine Memory]: 670 MB (+3629kb) [00:06:51]
+// Elapsed time: 72 seconds
+typeControlKey((HResource) null, "rd_wr_state_machine.sv", 'v'); // ce (w, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 209, 348); // ce (w, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 404, 348); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("rd_wr_state_machine.sv", 390, 242); // ce (w, ck)
+typeControlKey((HResource) null, "rd_wr_state_machine.sv", 'c'); // ce (w, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 125, 304); // ce (w, ck)
+typeControlKey((HResource) null, "rd_wr_state_machine.sv", 'v'); // ce (w, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 407, 143); // ce (w, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 86, 228); // ce (w, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 86, 78); // ce (w, ck)
+typeControlKey((HResource) null, "rd_wr_state_machine.sv", 'c'); // ce (w, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 83, 247); // ce (w, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 83, 231); // ce (w, ck)
+typeControlKey((HResource) null, "rd_wr_state_machine.sv", 'v'); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 87 MB (+29kb) [00:08:59]
+// Elapsed time: 388 seconds
+selectCodeEditor("rd_wr_state_machine.sv", 87, 100); // ce (w, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 104, 98); // ce (w, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 107, 242); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("rd_wr_state_machine.sv", 138, 91); // ce (w, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 107, 216); // ce (w, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 106, 162); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE

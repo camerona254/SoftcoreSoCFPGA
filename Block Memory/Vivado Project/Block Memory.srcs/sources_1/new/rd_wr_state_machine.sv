@@ -67,7 +67,7 @@ begin
         end
         storeMSB:
         begin
-            // blink the seven segment display to show change
+            // (optional) blink the seven segment display to show change
             state_next = addLSB;
         end
         addLSB:
@@ -82,7 +82,7 @@ begin
         end
         storeLSB:
         begin 
-            // blink the seven segment display to show change
+            // (optional) blink the seven segment display to show change
             if (read) // debounce
             begin
                 state_next = display;
@@ -106,8 +106,9 @@ begin
         end
         writeMSB:
         begin
-            // write switches to MSB of selected register in BRAM
-            // blink the seven segment display to show change
+            BRAM_en = 1'b0; // enable (active low)
+            BRAM_data_in [31:16] = sw [15:0]; // write switches to MSB of selected register in BRAM
+            // (optional) blink the seven segment display to show change
             if (write) // debounce
             begin
                 state_next = writeLSB;
@@ -115,10 +116,11 @@ begin
         end
         writeLSB:
         begin
-            // write switches to LSB of selected register in BRAM
-            // blink the seven segment display to show change
+            BRAM_data_in [31:16] = sw [15:0]; // write switches to LSB of selected register in BRAM
+            // (optional) blink the seven segment display to show change
             if (restart) // debounce
             begin
+                BRAM_en = 1'b1; // disable (active low)
                 state_next = addMSB;
             end
         end
