@@ -621,3 +621,4 @@ selectCodeEditor("rd_wr_state_machine.sv", 389, 402); // ce (w, ck)
 // [GUI Memory]: 111 MB (+1822kb) [01:50:22]
 // [GUI Memory]: 117 MB (+522kb) [01:55:58]
 // HMemoryUtils.trashcanNow. Engine heap size: 675 MB. GUI used memory: 51 MB. Current time: 5/13/19 4:54:40 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 675 MB. GUI used memory: 49 MB. Current time: 5/13/19 5:24:41 PM CDT
