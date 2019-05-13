@@ -182,3 +182,146 @@ selectCodeEditor("rd_wr_state_machine.sv", 106, 162); // ce (w, ck)
 selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
 // TclEventType: DG_GRAPH_STALE
 // TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 92 MB (+325kb) [00:15:47]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 675 MB. GUI used memory: 43 MB. Current time: 5/13/19 3:24:37 PM CDT
+// Elapsed time: 1896 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sw2hex (sw2hex.sv), disp_hex_mux : disp_hex_mux (ch04_17_disp_hex_mux.sv)]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sw2hex (sw2hex.sv), disp_hex_mux : disp_hex_mux (ch04_17_disp_hex_mux.sv)]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 130, 117); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rd_wr_state_machine.sv", 2); // k (j, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 129, 214); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("rd_wr_state_machine.sv", 101, 370); // ce (w, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 55, 386); // ce (w, ck)
+// Elapsed time: 32 seconds
+selectCodeEditor("rd_wr_state_machine.sv", 232, 369); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ch04_17_disp_hex_mux.sv", 3); // k (j, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 85, 281); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 72, 278); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 74, 282); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 68, 332); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 60, 178); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 117, 169); // ce (w, ck)
+typeControlKey((HResource) null, "ch04_17_disp_hex_mux.sv", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "ch04_17_disp_hex_mux.sv", 'v'); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 90, 181); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 132, 261); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 154, 165); // ce (w, ck)
+// Elapsed time: 21 seconds
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 160, 76); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 153, 217); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 155, 263); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 187, 264); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 174, 267); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 156, 315); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 124, 282); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 121, 256); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 132, 260); // ce (w, ck)
+typeControlKey((HResource) null, "ch04_17_disp_hex_mux.sv", 'v'); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "ch04_17_disp_hex_mux.sv", 'v'); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 96, 298); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 231, 288); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 225, 331); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 148, 283); // ce (w, ck)
+typeControlKey((HResource) null, "ch04_17_disp_hex_mux.sv", 'v'); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 103, 300); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 237, 331); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 258, 332); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 217, 339); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 137, 124); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 78, 230); // ce (w, ck)
+// [GUI Memory]: 98 MB (+2221kb) [00:53:27]
+// Elapsed time: 131 seconds
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 93, 328); // ce (w, ck)
+typeControlKey((HResource) null, "ch04_17_disp_hex_mux.sv", 'v'); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 65, 296); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 98, 302); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 162, 330); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 64, 403); // ce (w, ck)
+// Elapsed time: 78 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 146, 312); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 128, 314); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 167, 334); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 163, 349); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 130, 95); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 167, 257); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 163, 246); // ce (w, ck)
+// Elapsed time: 32 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rd_wr_state_machine.sv", 2); // k (j, ck)
+// Elapsed time: 23 seconds
+selectCodeEditor("rd_wr_state_machine.sv", 59, 359); // ce (w, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 60, 380); // ce (w, ck)
+// Elapsed time: 53 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sw2hex.sv", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ch04_17_disp_hex_mux.sv", 3); // k (j, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 0, 28); // ce (w, ck)
+typeControlKey((HResource) null, "ch04_17_disp_hex_mux.sv", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rd_wr_state_machine.sv", 2); // k (j, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 18, 345); // ce (w, ck)
+typeControlKey((HResource) null, "rd_wr_state_machine.sv", 'v'); // ce (w, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 39, 261); // ce (w, ck)
+// Elapsed time: 67 seconds
+selectCodeEditor("rd_wr_state_machine.sv", 68, 335); // ce (w, ck)
+typeControlKey((HResource) null, "rd_wr_state_machine.sv", 'c'); // ce (w, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 74, 350); // ce (w, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 70, 350); // ce (w, ck)
+typeControlKey((HResource) null, "rd_wr_state_machine.sv", 'v'); // ce (w, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 175, 351); // ce (w, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 209, 347); // ce (w, ck)
+typeControlKey((HResource) null, "rd_wr_state_machine.sv", 'v'); // ce (w, ck)
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "rd_wr_state_machine.sv", 'v'); // ce (w, ck)
+// Elapsed time: 16 seconds
+typeControlKey((HResource) null, "rd_wr_state_machine.sv", 'v'); // ce (w, ck)
+// Elapsed time: 30 seconds
+typeControlKey((HResource) null, "rd_wr_state_machine.sv", 'v'); // ce (w, ck)
+// Elapsed time: 158 seconds
+selectCodeEditor("rd_wr_state_machine.sv", 65, 292); // ce (w, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 74, 298); // ce (w, ck)
+// Elapsed time: 39 seconds
+selectCodeEditor("rd_wr_state_machine.sv", 159, 313); // ce (w, ck)
+// Elapsed time: 20 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED

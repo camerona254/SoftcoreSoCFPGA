@@ -10,7 +10,7 @@ module rd_wr_state_machine
     input logic reset,
     input logic [15:0] sw,
     input logic [3:0] btn,
-    output logic [3:0] an,
+    output logic [7:0] an,
     output logic [7:0] sseg
 );
 
@@ -40,6 +40,24 @@ BRAM_wrapper BRAM_wrapper
     .en(BRAM_en),
     .write_en(BRAM_wr_en)    
 );
+
+disp_hex_mux disp_hex_mux
+(
+    .clk(clk), 
+    .reset(reset),
+    .hex7(display_seven[31:28]), 
+    .hex6(display_seven[27:24]), 
+    .hex5(display_seven[23:20]), 
+    .hex4(display_seven[19:16]), 
+    .hex3(display_seven[15:12]), 
+    .hex2(display_seven[11:8]), 
+    .hex1(display_seven[7:4]), 
+    .hex0(display_seven[3:0]),
+    .dp_in(8'b11111111),
+    .an(an),   
+    .sseg(sseg) 
+);
+
 
 always_ff @ (posedge clk, posedge reset)
     if (reset)
@@ -126,4 +144,6 @@ begin
         end
     endcase
 end
+
+assign {hex7, hex6, hex5
 endmodule
