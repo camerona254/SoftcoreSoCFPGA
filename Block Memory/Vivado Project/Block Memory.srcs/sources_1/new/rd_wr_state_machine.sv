@@ -145,6 +145,4 @@ begin
     endcase
 end
 
-assign {hex7, hex6, hex5, hex4, hex3, hex2, hex1, hex0} = display_seven;
-
 endmodule

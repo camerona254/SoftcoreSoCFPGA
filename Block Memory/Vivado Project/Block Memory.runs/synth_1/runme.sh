@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log sw2hex.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source sw2hex.tcl
+EAStep vivado -log rd_wr_state_machine.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source rd_wr_state_machine.tcl
