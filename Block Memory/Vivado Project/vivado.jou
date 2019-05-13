@@ -27,3 +27,10 @@ remove_files  {{C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Block Memory/Vivado Proje
 reset_run synth_1
 launch_runs synth_1 -jobs 2
 wait_on_run synth_1
+reset_run synth_1
+reset_run BRAM_blk_mem_gen_0_0_synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1

@@ -41,3 +41,14 @@ Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Block M
 [Mon May 13 16:10:43 2019] Launched synth_1...
 Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Block Memory/Vivado Project/Block Memory.runs/synth_1/runme.log
 launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1006.641 ; gain = 122.707
+reset_run synth_1
+reset_run BRAM_blk_mem_gen_0_0_synth_1
+launch_runs synth_1 -jobs 2
+[Mon May 13 16:11:30 2019] Launched BRAM_blk_mem_gen_0_0_synth_1...
+Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Block Memory/Vivado Project/Block Memory.runs/BRAM_blk_mem_gen_0_0_synth_1/runme.log
+[Mon May 13 16:11:30 2019] Launched synth_1...
+Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Block Memory/Vivado Project/Block Memory.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Mon May 13 16:19:14 2019] Launched synth_1...
+Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Block Memory/Vivado Project/Block Memory.runs/synth_1/runme.log

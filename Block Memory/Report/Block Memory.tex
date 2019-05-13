@@ -24,10 +24,15 @@
 \maketitle
 
 \section{Introduction}
-
+The goal of this project is to use the seven-segment display and binary switches to read and write to and from the block memory within the Nexys 4 DDR prototyping board. For this project, the data and address registers are each 32 bits. The seven-segment display has 8 digits and can display the full range of hexidecimal digits at each of the 8 locations. With only 16 switches, the registers will need to be divided into MSB and LSB registers to read in the switches.
 
 \section{Experimental Plan}
-
+\begin{figure}
+\begin{center}
+\caption{State Machine for using Block Memory}\label{fig:blockmemstatemachine}
+\includegraphics[width=0.9\textwidth]{blockmemstatemachine.jpg}
+\end{center}
+\end{figure}
      
 \section{Analysis}
 %

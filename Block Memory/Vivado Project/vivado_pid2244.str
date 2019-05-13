@@ -495,3 +495,127 @@ dismissDialog("Launch Runs"); // f (ck)
 // TclEventType: FILE_SET_CHANGE
 // TclEventType: RUN_LAUNCH
 // Tcl Message: launch_runs synth_1 -jobs 2 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon May 13 16:11:30 2019] Launched BRAM_blk_mem_gen_0_0_synth_1... Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Block Memory/Vivado Project/Block Memory.runs/BRAM_blk_mem_gen_0_0_synth_1/runme.log [Mon May 13 16:11:30 2019] Launched synth_1... Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Block Memory/Vivado Project/Block Memory.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 360 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (ck)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Common 17-161] Invalid option value '#' specified for 'objects'. [C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Block Memory/Vivado Project/Block Memory.srcs/constrs_1/imports/constraint/Nexys4_DDR_chu.xdc:48]. ]", 2); // ah (O, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ch04_17_disp_hex_mux.sv", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rd_wr_state_machine.sv", 1); // k (j, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys4_DDR_chu.xdc]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys4_DDR_chu.xdc]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Nexys4_DDR_chu.xdc", 608, 350); // ce (w, ck)
+selectCodeEditor("Nexys4_DDR_chu.xdc", 627, 349); // ce (w, ck)
+selectCodeEditor("Nexys4_DDR_chu.xdc", 641, 297); // ce (w, ck)
+selectCodeEditor("Nexys4_DDR_chu.xdc", 615, 355); // ce (w, ck)
+selectCodeEditor("Nexys4_DDR_chu.xdc", 606, 336); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("Nexys4_DDR_chu.xdc", 605, 328); // ce (w, ck)
+selectCodeEditor("Nexys4_DDR_chu.xdc", 609, 317); // ce (w, ck)
+selectCodeEditor("Nexys4_DDR_chu.xdc", 622, 301); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("Nexys4_DDR_chu.xdc", 402, 266); // ce (w, ck)
+// Elapsed time: 53 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 13, true); // u (O, ck) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 13, true); // u (O, ck) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Mon May 13 16:19:14 2019] Launched synth_1... Run output will be captured here: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Block Memory/Vivado Project/Block Memory.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// [GUI Memory]: 104 MB (+1068kb) [01:32:27]
+// Elapsed time: 189 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rd_wr_state_machine.sv", 1); // k (j, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 392, 389); // ce (w, ck)
+selectCodeEditor("rd_wr_state_machine.sv", 496, 211); // ce (w, ck)
+// Elapsed time: 36 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+selectCheckBox(PAResourceItoN.MsgView_ERROR_MESSAGES, (String) null, true); // g (aQ, ck): TRUE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g (aQ, ck): TRUE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rd_wr_state_machine (rd_wr_state_machine.sv), BRAM_wrapper : BRAM_wrapper (BRAM_wrapper.v)]", 2); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rd_wr_state_machine (rd_wr_state_machine.sv), BRAM_wrapper : BRAM_wrapper (BRAM_wrapper.v), BRAM_i : BRAM (BRAM.bd), BRAM (BRAM.v)]", 4, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rd_wr_state_machine (rd_wr_state_machine.sv), BRAM_wrapper : BRAM_wrapper (BRAM_wrapper.v), BRAM_i : BRAM (BRAM.bd), BRAM (BRAM.v)]", 4, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Elapsed time: 20 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rd_wr_state_machine (rd_wr_state_machine.sv), BRAM_wrapper : BRAM_wrapper (BRAM_wrapper.v), BRAM_i : BRAM (BRAM.bd), BRAM (BRAM.v)]", 4); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rd_wr_state_machine (rd_wr_state_machine.sv), BRAM_wrapper : BRAM_wrapper (BRAM_wrapper.v), BRAM_i : BRAM (BRAM.bd), BRAM (BRAM.v), blk_mem_gen_0 : BRAM_blk_mem_gen_0_0 (BRAM_blk_mem_gen_0_0.xci)]", 5, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rd_wr_state_machine (rd_wr_state_machine.sv), BRAM_wrapper : BRAM_wrapper (BRAM_wrapper.v), BRAM_i : BRAM (BRAM.bd), BRAM (BRAM.v), blk_mem_gen_0 : BRAM_blk_mem_gen_0_0 (BRAM_blk_mem_gen_0_0.xci)]", 5, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// HOptionPane Warning: ''BRAM_blk_mem_gen_0_0.xci' IP is part of a block design. Please open the block design 'BRAM.bd' and customize the IP. (Re-customize IP)'
+selectButton("PAResourceQtoS.RecustomizeCore_THIS_IP_PART_OF_BLOCK_DESIGN_OK", "OK"); // JButton (A, G)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rd_wr_state_machine (rd_wr_state_machine.sv), BRAM_wrapper : BRAM_wrapper (BRAM_wrapper.v), BRAM_i : BRAM (BRAM.bd), BRAM (BRAM.v), blk_mem_gen_0 : BRAM_blk_mem_gen_0_0 (BRAM_blk_mem_gen_0_0.xci)]", 5); // B (D, ck)
+// A (ck): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // A (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 16 seconds
+selectCodeEditor("BRAM.v", 391, 229); // D (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rd_wr_state_machine (rd_wr_state_machine.sv), BRAM_wrapper : BRAM_wrapper (BRAM_wrapper.v), BRAM_i : BRAM (BRAM.bd), BRAM (BRAM.v), blk_mem_gen_0 : BRAM_blk_mem_gen_0_0 (BRAM_blk_mem_gen_0_0.xci), BRAM_blk_mem_gen_0_0(BRAM_blk_mem_gen_0_0_arch) (BRAM_blk_mem_gen_0_0.vhd)]", 6, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rd_wr_state_machine (rd_wr_state_machine.sv), BRAM_wrapper : BRAM_wrapper (BRAM_wrapper.v), BRAM_i : BRAM (BRAM.bd), BRAM (BRAM.v), blk_mem_gen_0 : BRAM_blk_mem_gen_0_0 (BRAM_blk_mem_gen_0_0.xci), BRAM_blk_mem_gen_0_0(BRAM_blk_mem_gen_0_0_arch) (BRAM_blk_mem_gen_0_0.vhd)]", 6, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rd_wr_state_machine (rd_wr_state_machine.sv), BRAM_wrapper : BRAM_wrapper (BRAM_wrapper.v), BRAM_i : BRAM (BRAM.bd), BRAM (BRAM.v), blk_mem_gen_0 : BRAM_blk_mem_gen_0_0 (BRAM_blk_mem_gen_0_0.xci), BRAM_blk_mem_gen_0_0(BRAM_blk_mem_gen_0_0_arch) (BRAM_blk_mem_gen_0_0.vhd)]", 6); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rd_wr_state_machine (rd_wr_state_machine.sv), BRAM_wrapper : BRAM_wrapper (BRAM_wrapper.v), BRAM_i : BRAM (BRAM.bd), BRAM (BRAM.v), blk_mem_gen_0 : BRAM_blk_mem_gen_0_0 (BRAM_blk_mem_gen_0_0.xci), BRAM_blk_mem_gen_0_0(BRAM_blk_mem_gen_0_0_arch) (BRAM_blk_mem_gen_0_0.vhd)]", 6); // B (D, ck)
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rd_wr_state_machine (rd_wr_state_machine.sv), BRAM_wrapper : BRAM_wrapper (BRAM_wrapper.v), BRAM_i : BRAM (BRAM.bd), BRAM (BRAM.v), blk_mem_gen_0 : BRAM_blk_mem_gen_0_0 (BRAM_blk_mem_gen_0_0.xci)]", 5, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rd_wr_state_machine (rd_wr_state_machine.sv), BRAM_wrapper : BRAM_wrapper (BRAM_wrapper.v), BRAM_i : BRAM (BRAM.bd), BRAM (BRAM.v), blk_mem_gen_0 : BRAM_blk_mem_gen_0_0 (BRAM_blk_mem_gen_0_0.xci)]", 5, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// HOptionPane Warning: ''BRAM_blk_mem_gen_0_0.xci' IP is part of a block design. Please open the block design 'BRAM.bd' and customize the IP. (Re-customize IP)'
+selectButton("PAResourceQtoS.RecustomizeCore_THIS_IP_PART_OF_BLOCK_DESIGN_OK", "OK"); // JButton (A, G)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rd_wr_state_machine (rd_wr_state_machine.sv), BRAM_wrapper : BRAM_wrapper (BRAM_wrapper.v), BRAM_i : BRAM (BRAM.bd), BRAM (BRAM.v)]", 4, true); // B (D, ck) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 675 MB. GUI used memory: 51 MB. Current time: 5/13/19 4:24:39 PM CDT
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, rd_wr_state_machine (rd_wr_state_machine.sv), BRAM_wrapper : BRAM_wrapper (BRAM_wrapper.v), BRAM_i : BRAM (BRAM.bd), BRAM (BRAM.v)]", 4, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("BRAM.v", 316, 267); // D (w, ck)
+selectCodeEditor("BRAM.v", 337, 389); // D (w, ck)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ch04_17_disp_hex_mux.sv", 2); // k (j, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 350, 302); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 399, 374); // ce (w, ck)
+// Elapsed time: 24 seconds
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 142, 56); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 219, 218); // ce (w, ck)
+selectCodeEditor("ch04_17_disp_hex_mux.sv", 137, 67); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g (aQ, ck): FALSE
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BRAM_blk_mem_gen_0_0.vhd", 5); // k (j, ck)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rd_wr_state_machine.sv", 1); // k (j, ck)
+// Elapsed time: 358 seconds
+selectCodeEditor("rd_wr_state_machine.sv", 231, 342); // ce (w, ck)
+// Elapsed time: 26 seconds
+selectCodeEditor("rd_wr_state_machine.sv", 315, 222); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("rd_wr_state_machine.sv", 389, 402); // ce (w, ck)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 296ms to process. Increasing delay to 2000 ms.
+// [GUI Memory]: 111 MB (+1822kb) [01:50:22]
