@@ -1,0 +1,4 @@
+THIRPARTY=false
+HW_PROJECT_REFERENCE=3dproj
+PROCESSOR=microblaze_I
+MSS_FILE=system.mss
