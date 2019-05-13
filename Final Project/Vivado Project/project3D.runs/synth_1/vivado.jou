@@ -2,11 +2,11 @@
 # Vivado v2018.2.2 (64-bit)
 # SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
 # IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
-# Start of session at: Thu May  9 21:39:40 2019
-# Process ID: 9436
-# Current directory: C:/Users/cmrnn/Desktop/FPGA/project3D.runs/synth_1
+# Start of session at: Mon May 13 10:42:16 2019
+# Process ID: 13596
+# Current directory: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.runs/synth_1
 # Command line: vivado.exe -log mcs_top_vanilla.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mcs_top_vanilla.tcl
-# Log file: C:/Users/cmrnn/Desktop/FPGA/project3D.runs/synth_1/mcs_top_vanilla.vds
-# Journal file: C:/Users/cmrnn/Desktop/FPGA/project3D.runs/synth_1\vivado.jou
+# Log file: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.runs/synth_1/mcs_top_vanilla.vds
+# Journal file: C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source mcs_top_vanilla.tcl -notrace

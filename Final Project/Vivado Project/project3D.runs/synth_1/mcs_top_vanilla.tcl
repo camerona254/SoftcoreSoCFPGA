@@ -25,46 +25,46 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/cmrnn/Desktop/FPGA/project3D.cache/wt [current_project]
-set_property parent.project_path C:/Users/cmrnn/Desktop/FPGA/project3D.xpr [current_project]
+set_property webtalk.parent_dir {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.xpr} [current_project]
 set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/cmrnn/Desktop/FPGA/project3D.cache/ip [current_project]
+set_property ip_output_repo {c:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog C:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/imports/bridge/chu_io_map.svh
-set_property file_type "Verilog Header" [get_files C:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/imports/bridge/chu_io_map.svh]
+read_verilog {{C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/imports/bridge/chu_io_map.svh}}
+set_property file_type "Verilog Header" [get_files {{C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/imports/bridge/chu_io_map.svh}}]
 read_verilog -library xil_defaultlib -sv {
-  {C:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/mmio/uart/baud_gen.sv}
-  {C:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/mmio/mmio_basic/chu_gpi.sv}
-  {C:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/mmio/mmio_basic/chu_gpo.sv}
-  {C:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/sys/bridge/chu_mcs_bridge.sv}
-  {C:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/mmio/mmio_support/chu_mmio_controller.sv}
-  {C:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/imports/FPGA/Source and Constraint Files/chapter_listing/chap15_spi/hdl/chu_spi_core.sv}
-  {C:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/mmio/mmio_basic/chu_timer.sv}
-  {C:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/mmio/uart/chu_uart.sv}
-  {C:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/mmio/mmio_support/fifo/fifo.sv}
-  {C:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/mmio/mmio_support/fifo/fifo_ctrl.sv}
-  {C:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/sys/subsys/mmio_sys_vanilla.sv}
-  {C:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/mmio/mmio_support/fifo/reg_file.sv}
-  {C:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/imports/FPGA/Source and Constraint Files/chapter_listing/chap15_spi/hdl/spi.sv}
-  {C:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/mmio/uart/uart.sv}
-  {C:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/mmio/uart/uart_rx.sv}
-  {C:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/mmio/uart/uart_tx.sv}
-  {C:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/imports/FPGA/Source and Constraint Files/hdl/sys/top/mcs_top_vanilla.sv}
+  {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/mmio/uart/baud_gen.sv}
+  {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/mmio/mmio_basic/chu_gpi.sv}
+  {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/mmio/mmio_basic/chu_gpo.sv}
+  {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/sys/bridge/chu_mcs_bridge.sv}
+  {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/mmio/mmio_support/chu_mmio_controller.sv}
+  {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/imports/FPGA/Source and Constraint Files/chapter_listing/chap15_spi/hdl/chu_spi_core.sv}
+  {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/mmio/mmio_basic/chu_timer.sv}
+  {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/mmio/uart/chu_uart.sv}
+  {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/mmio/mmio_support/fifo/fifo.sv}
+  {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/mmio/mmio_support/fifo/fifo_ctrl.sv}
+  {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/sys/subsys/mmio_sys_vanilla.sv}
+  {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/mmio/mmio_support/fifo/reg_file.sv}
+  {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/imports/FPGA/Source and Constraint Files/chapter_listing/chap15_spi/hdl/spi.sv}
+  {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/mmio/uart/uart.sv}
+  {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/mmio/uart/uart_rx.sv}
+  {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/imports/FPGA/Chu code/nexys4_sv_vanilla/nexys4_sv_vanilla.srcs/sources_1/imports/code_listing_sv/fpga_mcs_sv_src/hdl/mmio/uart/uart_tx.sv}
+  {C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/imports/FPGA/Source and Constraint Files/hdl/sys/top/mcs_top_vanilla.sv}
 }
-read_ip -quiet C:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/ip/cpu/cpu.xci
-set_property used_in_implementation false [get_files -all c:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/ip/cpu/bd_0/ip/ip_0/bd_3914_microblaze_I_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/ip/cpu/bd_0/ip/ip_0/bd_3914_microblaze_I_0_ooc_debug.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/ip/cpu/bd_0/ip/ip_1/bd_3914_rst_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/ip/cpu/bd_0/ip/ip_1/bd_3914_rst_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/ip/cpu/bd_0/ip/ip_2/bd_3914_ilmb_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/ip/cpu/bd_0/ip/ip_3/bd_3914_dlmb_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/ip/cpu/bd_0/ip/ip_6/bd_3914_lmb_bram_I_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/ip/cpu/bd_0/ip/ip_7/bd_3914_iomodule_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/ip/cpu/bd_0/bd_3914_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/ip/cpu/cpu_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/cmrnn/Desktop/FPGA/project3D.srcs/sources_1/ip/cpu/cpu_ooc.xdc]
+read_ip -quiet {{C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/ip/cpu/cpu.xci}}
+set_property used_in_implementation false [get_files -all {{c:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/ip/cpu/bd_0/ip/ip_0/bd_3914_microblaze_I_0.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/ip/cpu/bd_0/ip/ip_0/bd_3914_microblaze_I_0_ooc_debug.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/ip/cpu/bd_0/ip/ip_1/bd_3914_rst_0_0_board.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/ip/cpu/bd_0/ip/ip_1/bd_3914_rst_0_0.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/ip/cpu/bd_0/ip/ip_2/bd_3914_ilmb_0.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/ip/cpu/bd_0/ip/ip_3/bd_3914_dlmb_0.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/ip/cpu/bd_0/ip/ip_6/bd_3914_lmb_bram_I_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/ip/cpu/bd_0/ip/ip_7/bd_3914_iomodule_0_0_board.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/ip/cpu/bd_0/bd_3914_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/ip/cpu/cpu_board.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/sources_1/ip/cpu/cpu_ooc.xdc}}]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -74,8 +74,8 @@ set_property used_in_implementation false [get_files -all c:/Users/cmrnn/Desktop
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/cmrnn/Desktop/FPGA/project3D.srcs/constrs_1/imports/constraint/Nexys4_DDR_chu.xdc
-set_property used_in_implementation false [get_files C:/Users/cmrnn/Desktop/FPGA/project3D.srcs/constrs_1/imports/constraint/Nexys4_DDR_chu.xdc]
+read_xdc {{C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/constrs_1/imports/constraint/Nexys4_DDR_chu.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/cmrnn/Desktop/SoftcoreSoCFPGA/Final Project/Vivado Project/project3D.srcs/constrs_1/imports/constraint/Nexys4_DDR_chu.xdc}}]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

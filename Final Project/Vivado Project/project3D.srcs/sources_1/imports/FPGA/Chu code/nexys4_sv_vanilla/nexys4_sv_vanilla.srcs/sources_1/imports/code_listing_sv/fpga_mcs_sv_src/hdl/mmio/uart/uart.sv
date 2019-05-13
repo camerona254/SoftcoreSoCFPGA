@@ -14,7 +14,7 @@ module uart
    );
 
    // signal declaration
-   logic tick, rx_done_s_tick, tx_done_tick;
+   logic tick, rx_done_s_tick, tx_done_tick, rx_done_tick;
    logic tx_empty, tx_fifo_not_empty;
    logic [7:0] tx_fifo_out, rx_data_out;
 
