@@ -34,24 +34,9 @@ Figure~\ref{fig:blockmemstatemachine} on page~\pageref{fig:blockmemstatemachine}
 \includegraphics[width=0.9\textwidth]{blockmemstatemachine.jpg}
 \end{center}
 \end{figure}
-     
-\section{Analysis}
-%
-%\begin{figure}
-%\begin{center}
-%\caption{Timing diagram for the instruction memory test.}\label{fig:instrsim}
-%\includegraphics[width=0.9\textwidth]{../images/instr_mem_sim.png}
-%\end{center}
-%\end{figure}
-%
-%\begin{figure}
-%\begin{center}
-%	\caption{Timing diagram for the iFetch module test.}\label{fig:ifetchsim}
-%	\includegraphics[width=0.9\textwidth]{../images/iFetch_sim.png}
-%\end{center}
-%\end{figure}
 
 \section{Conclusion}
+This main components of this project were the read/write state machine and the BRAM instantiation. The read/write state machine used four buttons: one for loading in two bytes of the address at a time, another for reading from that address, another for writing to that address two bytes at a time, and a fourth for restarting the process. The read functionality only required one state because the eight digit seven-segment display is able to display eight hexidecimal digits for a total of 32 bits. The address and writes each required an MSB and then LSB states in the state machine to load all 32 bits since only 16 switches are available at a time on the Nexys 4 DDR.
 
 \section{Appendix}
 
